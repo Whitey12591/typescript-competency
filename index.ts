@@ -17,8 +17,8 @@ appDiv.innerHTML = add(2, 2) + ' is the answer';
 
 
 // Exercise 2 - string & boolean types
-// log('in dev mode', true)
-function log(msg:string, inDev:boolean) {
+log('in dev mode', true)
+function log(msg: string, inDev: boolean = false) {
   if(inDev) {
     appDiv.innerHTML = msg;
   }
@@ -26,17 +26,17 @@ function log(msg:string, inDev:boolean) {
 
 
 // Exercise 3 - object
-// logObj({a:3})
-function logObj(o) {
+logObj({a:3})
+function logObj(o: object) {
   appDiv.innerHTML = o + '';
 }
 
 
 
 // Exercise 4 - any type
-// logAny('hi');
-// logAny(true);
-// logAny({a:4})
-function logAny(a) {
+logAny('hi');
+logAny(true);
+logAny({a:4})
+function logAny(a:any) {
   appDiv.innerHTML = a;
 }
